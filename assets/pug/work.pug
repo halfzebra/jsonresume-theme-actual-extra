@@ -20,3 +20,8 @@ if helper.validArray(resume.work)
             ul(class='highlights margin-text-4 no-break')
               each highlight in work.highlights
                 li=highlight
+          if helper.validArray(work.keywords)
+            div(class='keywords margin-text-4')
+              ul(class='keywords no-break')
+                each keyword in work.keywords
+                  li(class='italic')=keyword
