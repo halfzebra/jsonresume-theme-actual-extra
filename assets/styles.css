@@ -232,6 +232,9 @@ li:first-child {
   content: "· ";
   vertical-align: middle;
 }
+.main .work .highlights p {
+  display: inline;
+}
 .main .left {
   display: table-cell;
 }
@@ -255,6 +258,12 @@ li:first-child {
   white-space: nowrap;
 }
 
+.basics .summary p:first-child {
+  margin-top: 0;
+}
+.basics .summary p:last-child {
+  margin-bottom: 0;
+}
 .basics .main {
   vertical-align: middle;
 }
@@ -376,13 +385,19 @@ li:first-child {
   list-style-type: disc;
 }
 
+.keywords ul li {
+  list-style: none;
+  margin-left: 5px;
+}
 .keywords ul li:first-child {
   margin-left: 0;
-  list-style: none;
 }
-
-.keywords ul li {
-  margin-left: 20px;
+.keywords ul li:first-child::before {
+  content: none;
+}
+.keywords ul li::before {
+  content: "•";
+  margin-right: 5px;
 }
 
 .italic {

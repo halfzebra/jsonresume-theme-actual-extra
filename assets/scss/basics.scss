@@ -1,5 +1,13 @@
 .basics {
 
+  .summary p:first-child {
+    margin-top: 0;
+  }
+
+  .summary p:last-child {
+    margin-bottom: 0;
+  }
+
   .main {
     vertical-align: middle;
 
